@@ -1,6 +1,5 @@
-FROM ubuntu
+FROM troebs/latex
 
 ARG DEBIAN_FRONTEND=noninteractive
 
-RUN apt update \
- && apt install -y texlive texlive-lang-german texlive-latex-extra biber
+RUN apt-get install -y pandoc
